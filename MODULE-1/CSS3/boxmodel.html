@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Box Model & Layout Control</title>
+  <style>
+    .eventCard {
+      border: 2px solid #007BFF;
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 600px;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    input:focus {
+      outline: 3px solid orange;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .gone {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="eventCard">
+    <h2>Featured Event</h2>
+    <p>This event card has border, padding, and margin.</p>
+
+    <form>
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" placeholder="Enter your name"/><br/><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" placeholder="Enter your email"/><br/><br/>
+
+      <input type="submit" value="Register" />
+    </form>
+  </div>
+
+  <p>Compare visibility vs display:</p>
+  <div style="border:1px solid #ccc; padding:10px; max-width:600px; margin:auto;">
+    <p>This text is <span class="hidden">hidden but takes space</span>.</p>
+    <p>This text is <span class="gone">gone and takes no space</span>.</p>
+  </div>
+
+</body>
+</html>

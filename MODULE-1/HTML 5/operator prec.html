@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Operator Precedence</title>
+  <script>
+    function calculate() {
+     
+      let result1 = 10 + 5 * 2;  
+      
+      let result2 = (10 + 5) * 2; 
+
+      document.getElementById("output").innerHTML = 
+        "10 + 5 * 2 = " + result1 + "<br>" +
+        "(10 + 5) * 2 = " + result2 + "<br><br>" +
+        "Explanation: Multiplication (*) has higher precedence than addition (+).";
+    }
+  </script>
+</head>
+<body>
+  <h1>Operator Precedence Demo</h1>
+  <button onclick="calculate()">Calculate Expressions</button>
+  <div id="output"></div>
+</body>
+</html>

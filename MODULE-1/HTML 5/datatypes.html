@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Type Demonstration</title>
+  <script>
+    function showValues() {
+      const intVal = parseInt(document.getElementById("intInput").value);
+      const floatVal = parseFloat(document.getElementById("floatInput").value);
+      const doubleVal = parseFloat(document.getElementById("doubleInput").value);
+      const charVal = document.getElementById("charInput").value;
+      const boolVal = document.getElementById("boolInput").checked;
+
+      document.getElementById("output").innerHTML = 
+        "int: " + intVal + "<br>" +
+        "float: " + floatVal + "<br>" +
+        "double: " + doubleVal + "<br>" +
+        "char: " + charVal + "<br>" +
+        "boolean: " + boolVal;
+    }
+  </script>
+</head>
+<body>
+  <h1>Java Primitive Data Types Demo</h1>
+  <label>Enter int:</label>
+  <input type="number" id="intInput" /><br />
+  
+  <label>Enter float:</label>
+  <input type="text" id="floatInput" /><br />
+  
+  <label>Enter double:</label>
+  <input type="text" id="doubleInput" /><br />
+  
+  <label>Enter char:</label>
+  <input type="text" id="charInput" maxlength="1" /><br />
+  
+  <label>Boolean (check for true):</label>
+  <input type="checkbox" id="boolInput" /><br />
+  
+  <button onclick="showValues()">Show Values</button>
+  
+  <h3>Output:</h3>
+  <div id="output"></div>
+</body>
+</html>

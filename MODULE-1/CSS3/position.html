@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Positioning Playground</title>
+  <style>
+    body {
+      height: 1500px;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .static-box {
+      position: static;
+      background-color: #f0ad4e;
+      padding: 20px;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background-color: #5bc0de;
+      padding: 20px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      background-color: #5cb85c;
+      padding: 20px;
+      color: white;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #d9534f;
+      color: white;
+      padding: 10px 15px;
+    }
+
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background-color: #0275d8;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="static-box">Static Position</div>
+
+  <div class="relative-box">Relative Position (moved down & right)</div>
+
+  <div class="absolute-box">Absolute Position (relative to nearest positioned ancestor)</div>
+
+  <div class="sticky-box">Sticky Position (sticks to top)</div>
+
+  <p style="padding: 20px;">Scroll down the page to see how sticky and fixed behave differently.</p>
+
+  <div class="fixed-box">Fixed (always visible)</div>
+
+</body>
+</html>
