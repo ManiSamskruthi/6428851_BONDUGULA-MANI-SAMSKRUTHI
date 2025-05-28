@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Type Casting Example</title>
+  <script>
+    function castValues() {
+      const doubleVal = parseFloat(document.getElementById("doubleInput").value);
+      const intVal = parseInt(document.getElementById("intInput").value);
+
+      const castToInt = Math.floor(doubleVal);
+      const castToDouble = Number(intVal);
+
+      document.getElementById("output").innerHTML = 
+        "Original double: " + doubleVal + "<br>" +
+        "Cast to int: " + castToInt + "<br>" +
+        "Original int: " + intVal + "<br>" +
+        "Cast to double: " + castToDouble;
+    }
+  </script>
+</head>
+<body>
+  <h1>Type Casting Demo</h1>
+  <label>Enter double value:</label>
+  <input type="text" id="doubleInput" /><br />
+  
+  <label>Enter int value:</label>
+  <input type="number" id="intInput" /><br />
+  
+  <button onclick="castValues()">Cast and Show</button>
+  
+  <div id="output"></div>
+</body>
+</html>

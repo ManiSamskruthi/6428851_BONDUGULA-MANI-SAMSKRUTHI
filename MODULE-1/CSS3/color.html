@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color & Background Styling</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      background-image: url('https://via.placeholder.com/800x600.png?text=Background+Image');
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #333;
+      padding: 20px;
+    }
+
+    section h2 {
+      background: linear-gradient(to right, #4a90e2, #9013fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 18px;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>Upcoming Events</h2>
+    <p>Welcome to our community event portal. Stay tuned for more updates!</p>
+  </section>
+
+</body>
+</html>
